@@ -9,6 +9,66 @@
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="formContainer">
+        <section class="headOfForm">
+            <h1 id="title">Kekaras Koalaklub Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the Koalaklub</p>
+        </section>
+        <section class="bodyOfForm">
+            <form id="survey-form">
+                <div class="formElement">
+                    <label id="name-label">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="formElement">
+                    <label id="email-label">E-Mail</label>
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="formElement">
+                    <label id="number-label">Years of membership</label>
+                    <input id="number" type="number" placeholder="Since how many years are you a member of Kekaras Koalaklub" required min="0" max="5">
+                </div> <br>
+                <div id="dropdown">
+                    <label id="dropdown-label">Which rank do you have?</label> <br>
+                    <select>
+                        <option value="Boss">Boss</option>
+                        <option value="OOP">OOP</option>
+                        <option value="Bratko">Bratko</option>
+                    </select>
+                </div> <br>
+                <div id="radio">
+                    <label for="radio">How many Koalas do you want?</label> <br>
+                    <input type="radio" name="amountKoala" value="1">
+                    <label for="1">1</label> <br> 
+                    <input type="radio" name="amountKoala" value="2">
+                    <label for="2">2</label> <br> 
+                    <input type="radio" name="amountKoala" value="3">
+                    <label for="3">3</label> <br> 
+                </div> <br>
+                <div id="checkboxes">
+                    <label for="checkboxes">What do you love about Koalas?</label> <br>
+                    <input type="checkbox" name="trait1" value="How they eat!">
+                    <label for="How they eat!">How they eat!</label> <br>
+                    <input type="checkbox" name="trait2" value="How they sleep!">
+                    <label for="How they sleep!">How they sleep!</label> <br>
+                    <input type="checkbox" name="trait3" value="How they walk!">
+                    <label for="How they walk!">How they walk!</label> <br>
+                    <input type="checkbox" name="trait4" value="Their nose!">
+                    <label for="Their nose!">Their nose!</label> <br>
+                    <input type="checkbox" name="trait5" value="Their ears!">
+                    <label for="Their ears!">Their ears!</label> <br>
+                </div> <br>
+                <div id="textarea">
+                    <label for="textarea">Any comments?</label> <br>
+                    <textarea>Enter your comments here...</textarea>
+                </div> <br>
+                <button id="submit">Submit</button>
+                
 
+            </form>
+        </section>
+        
+    </div>
+    
 </body>
 </html>
